@@ -1,0 +1,248 @@
+
+/* Minimal, clean style inspired by Twenty Twenty-Five */
+
+:root{
+  --maxw: 860px;
+  --pad: 20px;
+  --gap: 22px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+               "Apple Color Emoji", "Segoe UI Emoji", sans-serif !important;
+  color:#111;
+  background:#fff;
+  line-height:1.65;
+  letter-spacing:0.01em;
+}
+
+
+a{color:#111;text-decoration:none}
+a:hover{text-decoration:underline}
+header{
+  border-bottom:1px solid #e5e5e5;
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:10;
+}
+nav{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:14px var(--pad);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:var(--gap);
+  justify-content:flex-end;
+}
+nav .brand{
+  margin-right:auto;
+  font-weight:500;
+  letter-spacing:0.02em;
+}
+nav .brand a{display:inline-block;padding:4px 6px}
+nav a.nav-item{
+  padding:6px 4px;
+  font-size:16px;
+}
+nav .lang{
+  margin-left:28px;
+  font-weight:600;
+}
+main{
+  max-width:var(--maxw);
+  margin:110px auto 80px;
+  padding:0 var(--pad);
+}
+h1{
+  font-weight:400;
+  font-size:2.4rem;
+  margin:0 0 12px 0;
+}
+h2{
+  font-weight:500;
+  font-size:1.6rem;
+  margin-top:40px;
+  margin-bottom:12px;
+}
+p{margin:12px 0}
+.lead{
+  font-size:1.08rem;
+  color:#333;
+  margin-top:10px;
+}
+footer{
+  border-top:1px solid #e5e5e5;
+  margin-top:80px;
+  padding:36px 0;
+  text-align:center;
+  color:#666;
+  font-size:14px;
+}
+.active{ text-decoration:underline; text-underline-offset:4px }
+.active{ font-weight:700; }
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:26px;
+}
+.card{
+  border:1px solid #eee;
+  border-radius:12px;
+  padding:18px 18px;
+}
+@media (min-width:900px){
+  .grid.cols-2{ grid-template-columns:1fr 1fr; }
+  .grid.cols-3{ grid-template-columns:1fr 1fr 1fr; }
+}
+
+/* === make left-aligned text justified, keep centered elements intact === */
+main p,
+main li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* keep headings, nav, footer, and center elements untouched */
+h1, h2, h3,
+header, footer, nav, .brand, .center {
+  text-align: inherit;
+}
+
+/* keep footer text centered */
+footer p {
+  text-align: center !important;
+  text-justify: auto;
+}
+
+/* refined link style for publication section */
+.pub-list a {
+  color: #2a4e8a;
+  border-bottom: 1px solid rgba(42,78,138,0.2);
+}
+.pub-list a:hover {
+  color: #c00;
+  border-color: #c00;
+}
+
+.pub-list a:visited {
+  color: #555; /* keeps visited links calm */
+}
+
+/* refined link style for publication section */
+.valencies a {
+  color: #2a4e8a;
+  border-bottom: 1px solid rgba(42,78,138,0.2);
+}
+.valencies a:hover {
+  color: #c00;
+  border-color: #c00;
+}
+
+.valencies a:visited {
+  color: #555; /* keeps visited links calm */
+}
+
+/* refined link style for publication section */
+.mainpg a {
+  color: #2a4e8a;
+  border-bottom: 1px solid rgba(42,78,138,0.2);
+}
+.mainpg a:hover {
+  color: #c00;
+  border-color: #c00;
+}
+
+.mainpg a:visited {
+  color: #555; /* keeps visited links calm */
+}
+
+@media (max-width: 900px) {
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 10px var(--pad);
+    border-bottom: 1px solid #eee;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 */
+  }
+
+  nav a.nav-item {
+    display: inline-block;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  nav .lang {
+    margin-left: auto;
+  }
+
+  main {
+    margin-top: 60px;
+  }
+}
+.research-img {
+  width: 100%;
+  height: auto;
+  display: block;   /* 避免图片底部出现额外空隙，可选 */
+  max-width: 100%;  /* 防止超出容器 */
+}
+
+.hero {
+  margin-left: calc(-1 * var(--pad));
+  margin-right: calc(-1 * var(--pad));
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 360px; /* 可选 */
+}
+
+
+.peo-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.peo-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.pi-photo {
+  width: 160px;      /* fixed width for PI portrait */
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* 小屏幕时自动改成上下排列，避免挤在一起 */
+@media (max-width: 700px) {
+  .peo-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .peo-photo {
+    width: 140px;
+    height: 140px;
+  }
+}
