@@ -27,5 +27,16 @@
     <p>© 2026 Computational Soft and Living Matter Lab · Southern University of Science and Technology</p>
   </footer>
 
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "52d99c5e47bd479896c9eef5d106f7ba"}'></script>
+  <script>
+    (function() {
+      const endpoint = 'https://tiny-butterfly-48fe.xiuyang-xia.workers.dev/'; // TODO: replace with your Worker URL
+      const payload = {
+        path: location.pathname + location.search,
+        ref: document.referrer || ''
+      };
+      navigator.sendBeacon(endpoint, JSON.stringify(payload));
+    })();
+  </script>
 </body>
 </html>
