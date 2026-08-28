@@ -1,42 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching | CSLM Lab</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <meta name="description" content="Soft and Bio Matter group website.">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <header>
-    <nav>
-      <div class="brand"><a href="index.html"><b>CSLM Lab</b></a></div>
-      <a class="nav-item" href="index.html">Home</a><a class="nav-item" href="research.html">Research</a><a class="nav-item" href="people.html">People</a><a class="nav-item" href="publications.html">Publications</a><a class="nav-item active" href="teaching.html">Teaching</a><a class="nav-item" href="valencies.html">Valencies</a>
-      <span class="lang"><a href="zh/teaching.html">中文</a></span>
-    </nav>
-  </header>
-
-  <main>
-    <p>Currently under construction and will officially start in Fall 2026. 
-    Course materials, assignments, and project notes will be uploaded here once the courses begin.</p>
+---
+layout: default
+title: "Teaching"
+description: "Teaching and course materials from CSLM Lab, including College Physics I at SUSTech."
+lang: en
+nav: teaching
+alternate: /zh/teaching.html
+alt_lang: zh-Hans
+x_default: /teaching.html
+permalink: /teaching.html
+---
+<main id="main-content" class="teaching-page">
+    <h1>Teaching</h1>
+    <div class="course-list">
+      <section class="course-entry">
+        <p class="course-term">Fall 2026</p>
+        <div>
+          <h2>College Physics I <span lang="zh-Hans">大学物理 I</span></h2>
+          <p class="course-note">Course materials, assignments, and project notes will be published here during the semester.</p>
+        </div>
+      </section>
+    </div>
   </main>
-
-  <footer>
-    <p>© 2026 Computational Soft and Living Matter Lab · Southern University of Science and Technology</p>
-  </footer>
-
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "52d99c5e47bd479896c9eef5d106f7ba"}'></script>
-  <script>
-    (function() {
-      const endpoint = 'https://tiny-butterfly-48fe.xiuyang-xia.workers.dev/'; // TODO: replace with your Worker URL
-      const payload = {
-        path: location.pathname + location.search,
-        ref: document.referrer || ''
-      };
-      navigator.sendBeacon(endpoint, JSON.stringify(payload));
-    })();
-  </script>
-</body>
-</html>

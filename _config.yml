@@ -1,0 +1,15 @@
+title: Computational Soft and Living Matter Lab
+url: https://xxialab.github.io
+baseurl: ""
+timezone: Asia/Shanghai
+
+# Keep editable source files, local tooling, and drafts out of the published site.
+exclude:
+  - images/Asset 7.pdf
+  - images/images.key
+  - images/test1.png
+  - images/profile.JPG
+  - images/profile copy.JPG
+  - references/
+  - scripts/
+  - README.md

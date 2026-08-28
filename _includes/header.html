@@ -1,0 +1,31 @@
+<header>
+  <nav aria-label="{% if page.lang == 'zh-Hans' %}主导航{% else %}Primary navigation{% endif %}">
+    <div class="brand">
+      <a href="{% if page.lang == 'zh-Hans' %}{{ '/zh/index.html' | relative_url }}{% else %}{{ '/index.html' | relative_url }}{% endif %}" aria-label="CSLM Lab {% if page.lang == 'zh-Hans' %}首页{% else %}home{% endif %}">
+        <img class="brand-wordmark" src="{{ '/images/logo/cslm-wordmark.svg' | relative_url }}" alt="" width="690" height="205">
+        <span class="brand-meta"><b>LAB</b><span>SUSTech</span></span>
+      </a>
+    </div>
+    <details class="site-menu">
+      <summary>{% if page.lang == 'zh-Hans' %}菜单{% else %}Menu{% endif %}</summary>
+      <div class="nav-panel">
+        {% if page.lang == 'zh-Hans' %}
+          <a class="nav-item{% if page.nav == 'home' %} active{% endif %}" href="{{ '/zh/index.html' | relative_url }}"{% if page.nav == 'home' %} aria-current="page"{% endif %}>首页</a>
+          <a class="nav-item{% if page.nav == 'research' %} active{% endif %}" href="{{ '/zh/research.html' | relative_url }}"{% if page.nav == 'research' %} aria-current="page"{% endif %}>研究方向</a>
+          <a class="nav-item{% if page.nav == 'people' %} active{% endif %}" href="{{ '/zh/people.html' | relative_url }}"{% if page.nav == 'people' %} aria-current="page"{% endif %}>成员</a>
+          <a class="nav-item{% if page.nav == 'publications' %} active{% endif %}" href="{{ '/zh/publications.html' | relative_url }}"{% if page.nav == 'publications' %} aria-current="page"{% endif %}>发表成果</a>
+          <a class="nav-item{% if page.nav == 'teaching' %} active{% endif %}" href="{{ '/zh/teaching.html' | relative_url }}"{% if page.nav == 'teaching' %} aria-current="page"{% endif %}>教学</a>
+          <a class="nav-item{% if page.nav == 'vacancies' %} active{% endif %}" href="{{ '/zh/vacancies.html' | relative_url }}"{% if page.nav == 'vacancies' %} aria-current="page"{% endif %}>职位空缺</a>
+        {% else %}
+          <a class="nav-item{% if page.nav == 'home' %} active{% endif %}" href="{{ '/index.html' | relative_url }}"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Home</a>
+          <a class="nav-item{% if page.nav == 'research' %} active{% endif %}" href="{{ '/research.html' | relative_url }}"{% if page.nav == 'research' %} aria-current="page"{% endif %}>Research</a>
+          <a class="nav-item{% if page.nav == 'people' %} active{% endif %}" href="{{ '/people.html' | relative_url }}"{% if page.nav == 'people' %} aria-current="page"{% endif %}>People</a>
+          <a class="nav-item{% if page.nav == 'publications' %} active{% endif %}" href="{{ '/publications.html' | relative_url }}"{% if page.nav == 'publications' %} aria-current="page"{% endif %}>Publications</a>
+          <a class="nav-item{% if page.nav == 'teaching' %} active{% endif %}" href="{{ '/teaching.html' | relative_url }}"{% if page.nav == 'teaching' %} aria-current="page"{% endif %}>Teaching</a>
+          <a class="nav-item{% if page.nav == 'vacancies' %} active{% endif %}" href="{{ '/vacancies.html' | relative_url }}"{% if page.nav == 'vacancies' %} aria-current="page"{% endif %}>Vacancies</a>
+        {% endif %}
+      </div>
+    </details>
+    <a class="lang-switch" href="{{ page.alternate | relative_url }}" hreflang="{{ page.alt_lang }}" lang="{{ page.alt_lang }}">{% if page.lang == 'zh-Hans' %}English{% else %}中文{% endif %}</a>
+  </nav>
+</header>

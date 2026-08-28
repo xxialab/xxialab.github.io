@@ -1,29 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>People | CSLM Lab</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <meta name="description" content="Computational Soft and Living Matter Lab website.">
-</head>
-<body>
-
-  <header>
-    <nav>
-      <div class="brand"><a href="index.html"><b>CSLM Lab</b></a></div>
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="research.html">Research</a>
-      <a class="nav-item active" href="people.html">People</a>
-      <a class="nav-item" href="publications.html">Publications</a>
-      <a class="nav-item" href="teaching.html">Teaching</a>
-      <a class="nav-item" href="valencies.html">Valencies</a>
-      <span class="lang"><a href="zh/people.html">中文</a></span>
-    </nav>
-  </header>
-
-  <main>
+---
+layout: default
+title: "People"
+description: "Meet the researchers and staff of the Computational Soft and Living Matter Lab at SUSTech."
+lang: en
+nav: people
+alternate: /zh/people.html
+alt_lang: zh-Hans
+x_default: /people.html
+permalink: /people.html
+---
+<main id="main-content" class="people-page">
     <h1>People</h1>
 
     <!-- Principal Investigator -->
@@ -31,14 +17,14 @@
       <h2>Principal Investigator</h2>
 
       <div class="card peo-card">
-        <img src="images/profile.JPG" alt="Xiuyang Xia" class="pi-photo">
+        <img src="/images/profile-optimized.webp" alt="Xiuyang Xia" class="pi-photo" width="480" height="480" decoding="async">
 
         <div>
           <h3>Dr. Xiuyang Xia</h3>
           <p>
             <em>Ph.D., Physics, Nanyang Technological University, Singapore,</em> 2023<br>
             Assistant Professor<br>
-            Department of Physics & Center for Complex Flows and Soft Matter Research<br>
+            Department of Physics &amp; Center for Complex Flows and Soft Matter Research<br>
             Southern University of Science and Technology<br>
             Email: <a href="mailto:xiaxy@sustech.edu.cn">xiaxy@sustech.edu.cn</a><br>
           </p>
@@ -51,7 +37,7 @@
       <h2>Administrative Assistant</h2>
 
       <div class="card peo-card">
-        <img src="images/liujingyi.jpg" alt="Jingyi Niu" class="peo-photo">
+        <img src="/images/liujingyi.jpg" alt="Jingyi Niu" class="peo-photo peo-photo-headroom" width="1040" height="1566" loading="lazy" decoding="async">
 
         <div>
           <h3>Jingyi Niu</h3>
@@ -67,15 +53,31 @@
     <!-- Postdoctoral Research Fellows -->
     <section>
       <h2>Postdoctoral Research Fellows</h2>
-      <div class="card peo-card">
-        <img src="images/wangchaohong.jpg" alt="Chaohong Wang" class="peo-photo">
+      <div class="member-list">
+        <div class="card peo-card">
+          <img src="/images/wangchaohong.jpg" alt="Chaohong Wang" class="peo-photo peo-photo-headroom" width="413" height="531" loading="lazy" decoding="async">
 
-        <div>
-          <h3>Chaohong Wang</h3>
-          <p>
-            <em>Ph.D., Physics, Utrecht University, the Netherlands,</em> 2025<br>
-            Office: Science Building P5120
-          </p>
+          <div>
+            <h3>Chaohong Wang</h3>
+            <p>
+              <em>Ph.D., Physics, Utrecht University, the Netherlands, 2025</em><br>
+              Email: <a href="mailto:xmuwangch@gmail.com">xmuwangch@gmail.com</a><br>
+              Office: Science Building P5120
+            </p>
+          </div>
+        </div>
+
+        <div class="card peo-card">
+          <img src="/images/lucasdesouza.jpg" alt="Lucas de Souza" class="peo-photo peo-photo-headroom" width="720" height="960" loading="lazy" decoding="async">
+
+          <div>
+            <h3>Lucas de Souza</h3>
+            <p>
+              <em>Ph.D., Physics, Federal University of Rio Grande do Norte, Brazil, 2025</em><br>
+              Email: <a href="mailto:lucassouza@sustech.edu.cn">lucassouza@sustech.edu.cn</a><br>
+              Office: Science Building P5120
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -83,37 +85,20 @@
     <!-- PhD Students -->
     <section>
       <h2>PhD Students</h2>
-      <p>To be announced.</p>
-    </section>
+      <div class="member-list">
+        <div class="card peo-card">
+          <img src="/images/wangxuebin.jpg" alt="Xuebin Wang" class="peo-photo peo-photo-headroom" width="1280" height="1920" loading="lazy" decoding="async">
 
-    <!-- Master Students -->
-    <section>
-      <h2>Master Students</h2>
-      <p>To be announced.</p>
-    </section>
-
-    <!-- Undergraduate Students -->
-    <section>
-      <h2>Undergraduate Students</h2>
-      <p>To be announced.</p>
+          <div>
+            <h3>Xuebin Wang</h3>
+            <p>
+              <em>B.Sc., Physics, Nankai University, China, 2026</em><br>
+              Email: <a href="mailto:12631077@mail.sustech.edu.cn">12631077@mail.sustech.edu.cn</a><br>
+              Office: Science Building P5120
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
-
-  <footer>
-    <p>© 2026 Computational Soft and Living Matter Lab · Southern University of Science and Technology</p>
-  </footer>
-
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "52d99c5e47bd479896c9eef5d106f7ba"}'></script>
-  <script>
-    (function() {
-      const endpoint = 'https://tiny-butterfly-48fe.xiuyang-xia.workers.dev/'; // TODO: replace with your Worker URL
-      const payload = {
-        path: location.pathname + location.search,
-        ref: document.referrer || ''
-      };
-      navigator.sendBeacon(endpoint, JSON.stringify(payload));
-    })();
-  </script>
-</body>
-</html>

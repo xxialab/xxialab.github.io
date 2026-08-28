@@ -1,0 +1,12 @@
+.DS_Store
+.jekyll-cache/
+_site/
+output/
+references/
+
+# Local working copies that are not used by the website.
+images/profile copy.JPG
+
+# Keep rejected logo explorations local; publish only the approved wordmark.
+images/logo/*
+!images/logo/cslm-wordmark.svg

@@ -1,114 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research | CSLM Lab</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <meta name="description" content="Computational Soft and Living Matter Lab website.">
-  <style>
-    .research-img {
-      display: block;
-      max-width: 100%;
-      margin: 20px auto;
-      border-radius: 8px;
-    }
-    .references {
-      margin-top: 8px;
-      margin-bottom: 24px;
-      color: #333;
-      font-size: 0.95em;
-    }
-    .references li {
-      margin-bottom: 4px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <nav>
-      <div class="brand"><a href="index.html"><b>CSLM Lab</b></a></div>
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item active" href="research.html">Research</a>
-      <a class="nav-item" href="people.html">People</a>
-      <a class="nav-item" href="publications.html">Publications</a>
-      <a class="nav-item" href="teaching.html">Teaching</a>
-      <a class="nav-item" href="valencies.html">Positions</a>
-      <span class="lang"><a href="zh/research.html">中文</a></span>
-    </nav>
-  </header>
-
-  <main>
+---
+layout: default
+title: "Research"
+description: "Research at CSLM Lab spans multivalent sensing, programmable self-assembly, polymer networks, active matter, and physics-inspired AI."
+lang: en
+nav: research
+alternate: /zh/research.html
+alt_lang: zh-Hans
+x_default: /research.html
+permalink: /research.html
+---
+<main id="main-content" class="research-page">
     <h1>Research</h1>
     <p class="lead">
       We explore the physics of soft and disordered matter through statistical mechanics and computational modeling,
       spanning systems from polymer networks and colloidal assemblies to multivalent biomolecular interactions.
     </p>
 
-    <h2>DNA Programmable Self-Assembly</h2>
-    <img class="research-img" src="images/dnacc.png" alt="Research illustration">
-    <p>
-    Programmable self-assembly offers a uniquely powerful way to build complex materials from simple components, but conventional DNA-based designs often become overly intricate and kinetically fragile. Our work shows how free DNA linkers can streamline interactions, widen the practical assembly window, and reveal unexpected organizing principles rooted in multivalent binding, providing a clean and versatile framework for reliably forming complex structures in both experiments and theory.
-    </p>
-    <ul class="references">
-      <li><b>X. Xia</b>, Y. Peng, K. K. Li, and R. Ni, <em>Reports on Progress in Physics</em> 88, 078101 (2025)</li>
-      <li><b>X. Xia</b>, H. Hu, M. P. Ciamarra, and R. Ni, <em>Science Advances</em> 6, eaaz6921 (2020)</li>
-    </ul>
+    <div class="research-stack">
+      <section class="research-topic">
+        <img class="research-img" src="/images/dnacc.png" alt="DNA-programmable self-assembly illustration" width="1400" height="356" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">Programmable assembly</p>
+            <h2>DNA Programmable Self-Assembly</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              Programmable self-assembly offers a uniquely powerful way to build complex materials from simple components, but conventional DNA-based designs often become overly intricate and kinetically fragile. Our work shows how free DNA linkers can streamline interactions, widen the practical assembly window, and reveal unexpected organizing principles rooted in multivalent binding, providing a clean and versatile framework for reliably forming complex structures in both experiments and theory.
+            </p>
+            <ul class="references">
+              <li><b>X. Xia</b>, Y. Peng, K. K. Li, and R. Ni, <em>Reports on Progress in Physics</em> 88, 078101 (2025)</li>
+              <li><b>X. Xia</b>, H. Hu, M. P. Ciamarra, and R. Ni, <em>Science Advances</em> 6, eaaz6921 (2020)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <h2>Superselectivity from Multivalency</h2>
-    <img class="research-img" src="images/superselectivity.png" alt="Superselectivity illustration">
-    <p>
-      How can weak multivalent interactions yield “superselective” binding? We use statistical mechanics to capture the
-      cooperative nature of multivalent binding, quantify how ligand density, receptor distribution, and affinity tune
-      thresholds and sensitivity, and explore how these principles enable robust targeting and detection.
-    </p>
-    <ul class="references">
-      <li><b>X. Xia</b>, R. Ni, <em>Phys. Rev. Lett.</em>, 132, 118202 (2024)</li>
-      <li><b>X. Xia</b>, G. Zhang, Y. Jiao, R. Ni, <em>JACS Au</em> 3, 1385 (2023)</li>
-    </ul>
+      <section class="research-topic">
+        <img class="research-img" src="/images/superselectivity.png" alt="Superselective multivalent binding illustration" width="1400" height="435" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">Multivalent recognition</p>
+            <h2>Superselectivity from Multivalency</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              How can weak multivalent interactions yield “superselective” binding? We use statistical mechanics to capture the cooperative nature of multivalent binding, quantify how ligand density, receptor distribution, and affinity tune thresholds and sensitivity, and explore how these principles enable robust targeting and detection.
+            </p>
+            <ul class="references">
+              <li><b>X. Xia</b>, R. Ni, <em>Phys. Rev. Lett.</em>, 132, 118202 (2024)</li>
+              <li><b>X. Xia</b>, G. Zhang, Y. Jiao, R. Ni, <em>JACS Au</em> 3, 1385 (2023)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <h2>Complex Colloidal Self-Assembly</h2>
-    <img class="research-img" src="images/kagome.png" alt="Research illustration">
-    <p>
-    Complex colloidal systems can spontaneously organize into a remarkable variety of structures, yet achieving controlled assembly of open, hierarchical, or mixed-dimensional architectures has remained challenging due to geometric frustration and kinetic bottlenecks. Our work shows how particle shape, curvature, and multivalent entropic interactions together create robust pathways for order to emerge, enabling large-scale organization beyond close-packed crystals. These principles unify our studies across nanoparticle superlattices, hybrid dimensions, and anisotropic colloids, offering a versatile foundation for designing materials with rich optical, mechanical, and topological functionalities.
-    </p>
-    <ul class="references">
-      <li>S. Wan, <b>X. Xia</b>, Y. Gao, H. Zhang, Z. Zhang, F. Wu, X. Wu, D. Yang, T. Li, J. Li, R. Ni, A. Dong <i>et al.</i>, <em>Science</em> 387, 978 (2025)</li>
-      <li>T. Li, <b>X. Xia</b>, R. Ni, A. Dong <i>et al.</i>, <em>Sci. Adv.</em> 8, eabq0969 (2022)</li>
-    </ul>
+      <section class="research-topic">
+        <img class="research-img" src="/images/kagome.png" alt="Complex colloidal assembly illustration" width="1400" height="324" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">Colloidal architectures</p>
+            <h2>Complex Colloidal Self-Assembly</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              Complex colloidal systems can spontaneously organize into a remarkable variety of structures, yet achieving controlled assembly of open, hierarchical, or mixed-dimensional architectures has remained challenging due to geometric frustration and kinetic bottlenecks. Our work shows how particle shape, curvature, and multivalent entropic interactions together create robust pathways for order to emerge, enabling large-scale organization beyond close-packed crystals. These principles unify our studies across nanoparticle superlattices, hybrid dimensions, and anisotropic colloids, offering a versatile foundation for designing materials with rich optical, mechanical, and topological functionalities.
+            </p>
+            <ul class="references">
+              <li>S. Wan, <b>X. Xia</b>, Y. Gao, H. Zhang, Z. Zhang, F. Wu, X. Wu, D. Yang, T. Li, J. Li, R. Ni, A. Dong <i>et al.</i>, <em>Science</em> 387, 978 (2025)</li>
+              <li>T. Li, <b>X. Xia</b>, R. Ni, A. Dong <i>et al.</i>, <em>Sci. Adv.</em> 8, eabq0969 (2022)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-
-
-    <h2>Vitrimer Physics</h2>
-    <img class="research-img" src="images/vitrimer.png" alt="Vitrimer research illustration">
-    <p>
-      Vitrimers are reconfigurable polymer networks with dynamic bond exchange. We study how bond-swap kinetics,
-      network architecture, and thermal history govern their rheology and relaxation, and how these levers can be used
-      to design adaptable, recyclable soft materials.
-    </p>
-    <ul class="references">
-      <li>P. Rao, <b>X. Xia</b>, R. Ni, <em>J. Chem. Phys.</em>, 160, 061102 (2024)</li>
-      <li><b>X. Xia</b>, P. Rao, R. Ni, <em>JACS Au</em> 2, 2359 (2022)</li>
-      <li>Q. Lei, <b>X. Xia</b>, R. Ni <i>et al.</i>, <em>PNAS</em> 117, 27111 (2020)</li>
-    </ul>
+      <section class="research-topic">
+        <img class="research-img" src="/images/vitrimer.png" alt="Dynamic vitrimer network illustration" width="1400" height="291" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">Dynamic networks</p>
+            <h2>Vitrimer Physics</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              Vitrimers are reconfigurable polymer networks with dynamic bond exchange. We study how bond-swap kinetics, network architecture, and thermal history govern their rheology and relaxation, and how these levers can be used to design adaptable, recyclable soft materials.
+            </p>
+            <ul class="references">
+              <li>P. Rao, <b>X. Xia</b>, R. Ni, <em>J. Chem. Phys.</em>, 160, 061102 (2024)</li>
+              <li><b>X. Xia</b>, P. Rao, R. Ni, <em>JACS Au</em> 2, 2359 (2022)</li>
+              <li>Q. Lei, <b>X. Xia</b>, R. Ni <i>et al.</i>, <em>PNAS</em> 117, 27111 (2020)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
-
-  <footer>
-    <p>© 2026 Computational Soft and Living Matter Lab · Southern University of Science and Technology</p>
-  </footer>
-
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "52d99c5e47bd479896c9eef5d106f7ba"}'></script>
-  <script>
-    (function() {
-      const endpoint = 'https://tiny-butterfly-48fe.xiuyang-xia.workers.dev/'; // TODO: replace with your Worker URL
-      const payload = {
-        path: location.pathname + location.search,
-        ref: document.referrer || ''
-      };
-      navigator.sendBeacon(endpoint, JSON.stringify(payload));
-    })();
-  </script>
-</body>
-</html>

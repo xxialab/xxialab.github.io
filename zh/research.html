@@ -1,115 +1,97 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>研究方向 | CSLM Lab</title>
-  <link rel="stylesheet" href="../assets/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <meta name="description" content="Computational Soft and Living Matter Lab website.">
-  <style>
-    .research-img {
-      display: block;
-      max-width: 100%;
-      margin: 20px auto;
-      border-radius: 8px;
-    }
-    .references {
-      margin-top: 8px;
-      margin-bottom: 24px;
-      color: #333;
-      font-size: 0.95em;
-    }
-    .references li {
-      margin-bottom: 4px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <nav>
-      <div class="brand"><a href="index.html"><b>CSLM Lab</b></a></div>
-      <a class="nav-item" href="index.html">首页</a>
-      <a class="nav-item active" href="research.html">研究方向</a>
-      <a class="nav-item" href="people.html">成员</a>
-      <a class="nav-item" href="publications.html">发表成果</a>
-      <a class="nav-item" href="teaching.html">教学</a>
-      <a class="nav-item" href="valencies.html">职位空缺</a>
-      <span class="lang"><a href="../research.html">English</a></span>
-    </nav>
-  </header>
-
-  <main>
+---
+layout: default
+title: "研究方向"
+description: "计算软物质与生命物质实验室研究多价生物传感、可编程自组装、高分子网络、活性物质与人工智能物理。"
+lang: zh-Hans
+nav: research
+alternate: /research.html
+alt_lang: en
+x_default: /research.html
+permalink: /zh/research.html
+---
+<main id="main-content" class="research-page">
     <h1>研究方向</h1>
     <p class="lead">
       我们用统计物理与计算建模研究软物质与无序体系的物理机制，
       对象涵盖高分子网络、胶体组装以及多价生物分子相互作用。
     </p>
 
-    <h2>DNA 编程的自组装</h2>
-    <img class="research-img" src="../images/dnacc.png" alt="研究插图">
-    <p>
-      可编程自组装能将简单组分构筑为复杂材料，但传统 DNA 设计常因结构复杂与动力学脆弱而受限。
-      我们展示了连接子介导策略如何简化相互作用、扩大可操作的组装窗口，并揭示植根于多价结合的
-      组织机制，为实验与理论中可靠构筑复杂结构提供了一套简洁而通用的框架。
-    </p>
-    <ul class="references">
-      <li><b>X. Xia</b>, Y. Peng, K. K. Li, R. Ni, <em>Reports on Progress in Physics</em> 88, 078101 (2025)</li>
-      <li><b>X. Xia</b>, H. Hu, M. P. Ciamarra, R. Ni, <em>Science Advances</em> 6, eaaz6921 (2020)</li>
-    </ul>
+    <div class="research-stack">
+      <section class="research-topic">
+        <img class="research-img" src="/images/dnacc.png" alt="DNA 可编程自组装示意图" width="1400" height="356" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">可编程组装</p>
+            <h2>DNA 编程的自组装</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              可编程自组装能将简单组分构筑为复杂材料，但传统 DNA 设计常因结构复杂与动力学脆弱而受限。我们展示了连接子介导策略如何简化相互作用、扩大可操作的组装窗口，并揭示植根于多价结合的组织机制，为实验与理论中可靠构筑复杂结构提供了一套简洁而通用的框架。
+            </p>
+            <ul class="references">
+              <li><b>X. Xia</b>, Y. Peng, K. K. Li, R. Ni, <em>Reports on Progress in Physics</em> 88, 078101 (2025)</li>
+              <li><b>X. Xia</b>, H. Hu, M. P. Ciamarra, R. Ni, <em>Science Advances</em> 6, eaaz6921 (2020)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <h2>超选择性与多价作用</h2>
-    <img class="research-img" src="../images/superselectivity.png" alt="研究插图">
-    <p>
-      多价弱作用为何能实现“超选择性”识别？我们从统计力学刻画多体结合的协同效应，
-      量化配体密度、受体分布与结合亲和力对识别阈值与灵敏度的影响，
-      并探索其在靶向检测与分子识别中的可用性。
-    </p>
-    <ul class="references">
-      <li><b>X. Xia</b>, R. Ni, <em>Phys. Rev. Lett.</em> 132, 118202 (2024)</li>
-      <li><b>X. Xia</b>, G. Zhang, Y. Jiao, R. Ni, <em>JACS Au</em> 3, 1385 (2023)</li>
-    </ul>
+      <section class="research-topic">
+        <img class="research-img" src="/images/superselectivity.png" alt="多价超选择性结合示意图" width="1400" height="435" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">多价识别</p>
+            <h2>超选择性与多价作用</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              多价弱作用为何能实现“超选择性”识别？我们从统计力学刻画多体结合的协同效应，量化配体密度、受体分布与结合亲和力对识别阈值与灵敏度的影响，并探索其在靶向检测与分子识别中的可用性。
+            </p>
+            <ul class="references">
+              <li><b>X. Xia</b>, R. Ni, <em>Phys. Rev. Lett.</em> 132, 118202 (2024)</li>
+              <li><b>X. Xia</b>, G. Zhang, Y. Jiao, R. Ni, <em>JACS Au</em> 3, 1385 (2023)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <h2>复杂胶体自组装</h2>
-    <img class="research-img" src="../images/kagome.png" alt="研究插图">
-    <p>
-      复杂胶体体系能形成多样结构，但几何挫折与动力学瓶颈常阻碍可控组装。
-      我们探究粒子形状、曲率与多价熵驱动作用如何协同打开稳健的有序路径，
-      使开放或分层架构得以大尺度形成，并为设计具光学、力学、拓扑功能的材料奠定基础。
-    </p>
-    <ul class="references">
-      <li>S. Wan, <b>X. Xia</b>, Y. Gao, H. Zhang, Z. Zhang, F. Wu, X. Wu, D. Yang, T. Li, J. Li, R. Ni, A. Dong <i>et al.</i>, <em>Science</em> 387, 978 (2025)</li>
-      <li>T. Li, <b>X. Xia</b>, R. Ni, A. Dong <i>et al.</i>, <em>Sci. Adv.</em> 8, eabq0969 (2022)</li>
-    </ul>
+      <section class="research-topic">
+        <img class="research-img" src="/images/kagome.png" alt="复杂胶体组装示意图" width="1400" height="324" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">胶体结构</p>
+            <h2>复杂胶体自组装</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              复杂胶体体系能形成多样结构，但几何挫折与动力学瓶颈常阻碍可控组装。我们探究粒子形状、曲率与多价熵驱动作用如何协同打开稳健的有序路径，使开放或分层架构得以大尺度形成，并为设计具光学、力学、拓扑功能的材料奠定基础。
+            </p>
+            <ul class="references">
+              <li>S. Wan, <b>X. Xia</b>, Y. Gao, H. Zhang, Z. Zhang, F. Wu, X. Wu, D. Yang, T. Li, J. Li, R. Ni, A. Dong <i>et al.</i>, <em>Science</em> 387, 978 (2025)</li>
+              <li>T. Li, <b>X. Xia</b>, R. Ni, A. Dong <i>et al.</i>, <em>Sci. Adv.</em> 8, eabq0969 (2022)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <h2>可逆键交换网络材料</h2>
-    <img class="research-img" src="../images/vitrimer.png" alt="研究插图">
-    <p>
-      Vitrimer 是具备动态可交换键的可重构高分子网络。我们关注键交换动力学与网络结构
-      如何共同决定其流变与松弛行为，并探索这些可调控因素在自适应与可回收软材料设计中的作用。
-    </p>
-    <ul class="references">
-      <li>P. Rao, <b>X. Xia</b>, R. Ni, <em>J. Chem. Phys.</em> 160, 061102 (2024)</li>
-      <li><b>X. Xia</b>, P. Rao, R. Ni, <em>JACS Au</em> 2, 2359 (2022)</li>
-      <li>Q. Lei, <b>X. Xia</b>, R. Ni <i>et al.</i>, <em>PNAS</em> 117, 27111 (2020)</li>
-    </ul>
+      <section class="research-topic">
+        <img class="research-img" src="/images/vitrimer.png" alt="可逆键交换网络示意图" width="1400" height="291" loading="lazy" decoding="async">
+        <div class="research-topic-body">
+          <div class="research-topic-heading">
+            <p class="topic-domain">动态网络</p>
+            <h2>可逆键交换网络材料</h2>
+          </div>
+          <div class="research-topic-copy">
+            <p>
+              Vitrimer 是具备动态可交换键的可重构高分子网络。我们关注键交换动力学与网络结构如何共同决定其流变与松弛行为，并探索这些可调控因素在自适应与可回收软材料设计中的作用。
+            </p>
+            <ul class="references">
+              <li>P. Rao, <b>X. Xia</b>, R. Ni, <em>J. Chem. Phys.</em> 160, 061102 (2024)</li>
+              <li><b>X. Xia</b>, P. Rao, R. Ni, <em>JACS Au</em> 2, 2359 (2022)</li>
+              <li>Q. Lei, <b>X. Xia</b>, R. Ni <i>et al.</i>, <em>PNAS</em> 117, 27111 (2020)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
-
-  <footer>
-    <p>© 2026 Computational Soft and Living Matter Lab · Southern University of Science and Technology</p>
-  </footer>
-
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "52d99c5e47bd479896c9eef5d106f7ba"}'></script>
-  <script>
-    (function() {
-      const endpoint = 'https://tiny-butterfly-48fe.xiuyang-xia.workers.dev/'; // TODO: replace with your Worker URL
-      const payload = {
-        path: location.pathname + location.search,
-        ref: document.referrer || ''
-      };
-      navigator.sendBeacon(endpoint, JSON.stringify(payload));
-    })();
-  </script>
-</body>
-</html>
