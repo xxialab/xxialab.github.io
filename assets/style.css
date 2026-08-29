@@ -523,7 +523,7 @@ html:lang(zh) .hero h1 {
 }
 
 .research-topic {
-  border-top: 1px solid var(--carbon);
+  background: var(--field);
 }
 
 .research-topic > .research-img,
@@ -532,8 +532,8 @@ html:lang(zh) .hero h1 {
   height: auto;
   margin: 0;
   display: block;
-  border-bottom: 1px solid var(--line);
-  background: var(--paper);
+  background: transparent;
+  mix-blend-mode: multiply;
 }
 
 .research-topic-body {
