@@ -73,7 +73,6 @@ def render_header(meta: dict) -> str:
     <div class="brand">
       <a href="{home}" aria-label="{home_label}">
         <img class="brand-wordmark" src="/images/logo/cslm-wordmark.svg" alt="" width="690" height="205">
-        <span class="brand-meta"><b>LAB</b><span>SUSTech</span></span>
       </a>
     </div>
     <details class="site-menu">
@@ -109,7 +108,7 @@ def render_page(meta: dict, content: str) -> str:
   <link rel="alternate" hreflang="{meta['alt_lang']}" href="{alternate}">
   <link rel="alternate" hreflang="x-default" href="{x_default}">
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/style.css?v=20260828-11">
+  <link rel="stylesheet" href="/assets/style.css?v=20260829-1">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CSLM Lab">
   <meta property="og:title" content="{title} | CSLM Lab">
