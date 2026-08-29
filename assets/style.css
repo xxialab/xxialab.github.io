@@ -285,19 +285,6 @@ main > ol:not(.pub-list) {
   line-height: 1.6;
 }
 
-.section-label,
-.eyebrow,
-.topic-domain {
-  margin: 0 0 12px;
-  color: var(--signal-dark);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.085em;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -350,10 +337,6 @@ footer p {
   align-items: flex-start;
 }
 
-.hero .eyebrow {
-  margin-bottom: 22px;
-}
-
 .hero h1 {
   max-width: 760px;
   margin: 0 0 30px;
@@ -376,33 +359,6 @@ html:lang(zh) .hero h1 {
   color: var(--carbon-soft);
   font-size: clamp(1.08rem, 1.8vw, 1.26rem);
   line-height: 1.55;
-}
-
-.hero-tags {
-  width: 100%;
-  margin: 0 0 34px;
-  padding-top: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 22px;
-  border-top: 1px solid var(--line);
-}
-
-.hero-tags span {
-  position: relative;
-  color: #53605c;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.045em;
-  text-transform: uppercase;
-}
-
-.hero-tags span:not(:last-child)::after {
-  content: "/";
-  position: absolute;
-  right: -14px;
-  color: var(--steel);
 }
 
 .hero-actions {
@@ -458,31 +414,6 @@ html:lang(zh) .hero h1 {
   background: var(--carbon);
 }
 
-.hero-figure::before,
-.hero-figure::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.hero-figure::before {
-  top: 18px;
-  left: 18px;
-  width: 46px;
-  height: 1px;
-  background: var(--bond);
-  box-shadow: 0 0 0 0 var(--bond);
-}
-
-.hero-figure::after {
-  top: 18px;
-  left: 18px;
-  width: 1px;
-  height: 46px;
-  background: var(--signal);
-}
-
 .hero-image-window {
   min-height: 0;
   flex: 1 1 auto;
@@ -503,25 +434,6 @@ html:lang(zh) .hero h1 {
   object-fit: cover;
   object-position: center;
   filter: saturate(0.92) contrast(1.04);
-}
-
-.hero-figure figcaption {
-  min-height: 62px;
-  padding: 15px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: #cbd4d1;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.055em;
-  text-transform: uppercase;
-}
-
-.hero-figure figcaption span:last-child {
-  color: #8fcac5;
 }
 
 .home-intro {
