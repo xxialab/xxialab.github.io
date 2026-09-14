@@ -30,6 +30,21 @@
   src: url("fonts/source-sans-3-latin.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "CSLM Optima";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/optima-bold-italic-cslm.woff2") format("woff2");
+  unicode-range: U+0043, U+004C-004D, U+0053;
+}
+
+.cslm-letter {
+  font-family: "CSLM Optima", Optima, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
 :root {
   --carbon: #17211f;
   --carbon-soft: #394541;
