@@ -107,8 +107,8 @@ def render_page(meta: dict, content: str) -> str:
   <link rel="canonical" href="{canonical}">
   <link rel="alternate" hreflang="{meta['alt_lang']}" href="{alternate}">
   <link rel="alternate" hreflang="x-default" href="{x_default}">
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/style.css?v=20260829-3">
+  <link rel="icon" href="/images/favicon.svg?v=cslm-1" type="image/svg+xml" sizes="any">
+  <link rel="stylesheet" href="/assets/style.css?v=20260914-2">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CSLM Lab">
   <meta property="og:title" content="{title} | CSLM Lab">
