@@ -685,7 +685,7 @@ html:lang(zh) .hero h1 {
   text-decoration: underline;
   text-decoration-color: var(--signal);
   text-decoration-thickness: 2px;
-  text-underline-offset: 0.18em;
+  text-underline-offset: 0.3em;
 }
 
 .pub-notes {
