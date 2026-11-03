@@ -350,7 +350,7 @@ footer {
 .university-wordmark { position: relative; display: block; width: 260px; height: 66px; overflow: hidden; }
 .university-wordmark img { position: absolute; width: 520.41px; height: auto; max-width: none; left: -130.41px; top: -151.22px; }
 .affiliation .physics-logo { width: 260px; height: auto; }
-.affiliation .center-wordmark { width: 260px; height: auto; box-sizing: content-box; padding: 9px 12px; background: #17211f; }
+.affiliation .center-wordmark { width: 260px; height: auto; background: transparent; }
 .center-emblem { display: block; width: 58px; height: 60px; overflow: hidden; flex-shrink: 0; }
 .center-emblem img { display: block; height: 60px; width: auto; max-width: none; }
 .affiliation:focus-visible { outline: 2px solid var(--signal); outline-offset: 6px; }
