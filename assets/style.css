@@ -316,13 +316,42 @@ footer {
   padding: 30px var(--pad);
   border-top: 1px solid var(--line);
   color: #56635f;
-  background: #edf1f0;
+  background: #ffffff;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.8rem;
   line-height: 1.55;
   text-align: center;
 }
 
+.affiliations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px 48px;
+  margin: 0 auto 28px;
+}
+.affiliation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--carbon);
+  text-decoration: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+.affiliation small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.3;
+  margin-top: 4px;
+}
+.university img { width: 58px; height: 58px; object-fit: contain; }
+.affiliation .physics-logo { width: 260px; height: auto; }
+.center-emblem { display: block; width: 58px; height: 60px; overflow: hidden; flex-shrink: 0; }
+.center-emblem img { display: block; height: 60px; width: auto; max-width: none; }
+.affiliation:focus-visible { outline: 2px solid var(--signal); outline-offset: 6px; }
 footer p {
   margin: 0;
   text-align: center !important;
